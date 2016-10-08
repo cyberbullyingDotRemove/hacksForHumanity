@@ -1,2 +1,2 @@
-# hacksForHumanity
-This is our Hacks for Humanity hackathon project to help stop cyberbullying
+<h1>cyberbullying.remove()</h1>
+<h2><i>Let's end cyberbullying together!</i></h2>
