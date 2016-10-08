@@ -10,9 +10,7 @@ require("common.php");
                 id,
                 username,
                 password,
-                salt,
-                email,
-                fname
+                salt
             FROM Users
             WHERE
                 username = :username
@@ -56,7 +54,6 @@ require("common.php");
         {
 
             $_SESSION['username'] = $row['username'];
-            $_SESSION['fname'] = $row['fname'];
             $_SESSION['id'] = $row['id'];
 
             unset($row['salt']);
