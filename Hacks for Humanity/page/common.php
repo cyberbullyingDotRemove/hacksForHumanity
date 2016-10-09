@@ -1,8 +1,8 @@
 <?php
-    $username = "";
+    $username = "root";
     $password = "";
-    $host = "";
-    $dbname = "";
+    $host = "localhost";
+    $dbname = "anti_cyber";
 
     $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
     try
@@ -44,3 +44,4 @@
 
 
     session_start();
+?>
