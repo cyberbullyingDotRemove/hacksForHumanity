@@ -5,6 +5,16 @@
 <?php
 require_once ("link.php");
 ?>
+<style>
+	.body * {
+		margin: 10px;
+	}
+	
+	#post_label span {
+		position: relative;
+		bottom: 70px;
+	}
+</style>
 <script src="../script/submit_validate.js"></script>
 <script>
 	window.onload = function() {
@@ -34,8 +44,8 @@ require_once ("link.php");
 			<form action="submit_confirm.php" method="post" id="submit_form">
 				<div>
 					<label> URL: <input type="text" size="32" name="url" id="url"><br>
-					</label> <label> Post: <textarea rows="5" cols="30" name="post"
-							id="post"></textarea><br>
+					</label> <label id="post_label"><span>Post:</span> <textarea rows="5" cols="20" name="post"
+							id="post"></textarea> <br>
 					</label> <label> Screenshot/Image: <input type="file" name="image"
 						id="image"><br>
 					</label> <input type="image" src="../image/submit_button.png" value="Submit Cyberbullying"

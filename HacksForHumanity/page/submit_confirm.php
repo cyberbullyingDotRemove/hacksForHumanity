@@ -23,6 +23,7 @@ require_once ("link.php");
 		<div class="body">
 			<h1>Thank you so much for your submission!</h1>
 			<h2>Cyberbullying needs to be stopped and you just helped do that!</h2>
+			<a href="profile.php"><img src="../image/back_to_profile_button.png" alt="Back to Profile"></a>
 		</div>
 	</div>
 </body>

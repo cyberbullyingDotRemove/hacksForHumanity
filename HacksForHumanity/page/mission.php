@@ -8,7 +8,10 @@ include_once ("link.php");
 
 <style>
 	.body {
-		
+		padding: 2em;
+		padding-right: 400px;
+		padding-top: 72.5px;
+		padding-bottom: 57.5px;
 	}
 </style>
 </head>

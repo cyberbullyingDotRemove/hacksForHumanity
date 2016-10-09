@@ -14,7 +14,8 @@
 				</ul>
 			</li>
 			<li><a href="register.php">CREATE A PROFILE</a></li>
-			<li><a href="dear_abbie.php">ADVICE COLUMN</a></li>
+			<li><a href="profile.php">MY PROFILE</a></li>
+			<li><a href="advice.php">ADVICE COLUMN</a></li>
 			<li><a href="submit.php">STOP CYBERBULLYING</a></li>
 		</ul>
 	</nav>
