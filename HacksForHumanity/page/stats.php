@@ -3,7 +3,7 @@
 <head>
 <title>cyber_go(ne) -- Our Mission</title>
 <?php
-include_once ("../../link.php");
+include_once ("link.php");
 ?>
 </head>
 <body>
@@ -12,10 +12,8 @@ include_once ("../../link.php");
 include_once ("header.php");
 ?>
 	<div class="body">
-			<div>
-				
-			</div>
-		</div>
+		<h2>Our Cyberbullying Statistics</h2>
+	</div>
 <?php
 include_once ("footer.php");
 ?>
