@@ -25,7 +25,7 @@
 				</div>
 				<div>
 					<!-- display graphic of points (low priority) -->
-					<!-- display avatar -->>
+					<img href = "" src = ../image/thumbs_up.png>
 				</div>
 			</div>
 		</div>
