@@ -3,13 +3,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>cyber_go(ne) -- Home</title>
 <link rel="stylesheet" href="../style/style.css">
+<link type="image/png" rel="icon" href="../image/logo.png">
 </head>
 <body>
 	<div class="wrapper">
 		<header>
-			<img src="../image/logo.png" alt="Could not load logo">
+			<img src="../image/logo.png" alt="Could not load logo" class="logo">
 			<h1>cyber_go(ne)</h1>
 			<nav>
 				<ul>
@@ -20,9 +21,10 @@
 				</ul>
 			</nav>
 			<img src="../image/profile_picture.png"
-				alt="Your profile picture did not load!">
+				alt="Your profile picture did not load!" class="profile_pic">
 		</header>
-		<div id="body">
+		<!--Body of the home page-->
+		<div class="body">
 			<div id="about">
 				<img src="../image/about.png" alt="END CYBERBULLYING NOW">
 			</div>
@@ -44,6 +46,7 @@
 				</a>
 			</div>
 		</div>
+		<!--End of home body-->
 		<footer>
 			<span class="copyright">&copy; inc.</span> <span class="contact_info">
 				cyber_gone@gmail.com<br> 480.555.4444
