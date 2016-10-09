@@ -7,6 +7,12 @@
 include_once ("link.php");
 ?>
 
+<style>
+	form#register_submit {
+		margin: 10px;
+	}
+</style>
+
 <script src="../script/register_validate.js"></script>
 <script>
 	window.onload = function() {
@@ -42,18 +48,19 @@ include_once ("link.php");
 	require_once ("header.php");
 	?>
 	<div class="body">
-			<form action="register_confirm.php" method="post"
-				id="register_submit">
-				<div>
-					<label> Username: <input type="text" name="username" id="username"><br>
-					</label> <label> Password: <input type="password" name="password"
-						id="password"><br>
-					</label> <label> Confirm Password: <input type="password"
-						name="password_confirm" id="password_confirm"><br>
-					</label> <label> Email: <input type="text" name="email" id="email">
-					</label> <input type="submit" value="Sign up!"><br>
-				</div>
-			</form>
+		<h2>Create a profile so that you may submit evidence of cyberbullying online!</h2>
+		<form action="register_confirm.php" method="post"
+			id="register_submit">
+			<div>
+				<label> Username: <input type="text" name="username" id="username"><br>
+				</label> <label> Password: <input type="password" name="password"
+					id="password"><br>
+				</label> <label> Confirm Password: <input type="password"
+					name="password_confirm" id="password_confirm"><br>
+				</label> <label> Email: <input type="text" name="email" id="email">
+				</label> <input type="submit" value="Sign up!"><br>
+			</div>
+		</form>
 		</div>
 	<?php
 	require_once ("footer.php");

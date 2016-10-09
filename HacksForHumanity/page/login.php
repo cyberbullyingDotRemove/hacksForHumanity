@@ -1,7 +1,7 @@
 <?php
 session_start ();
 ?>
-<form action="#" id="login_submit" method="post">
+<form action="#" id="login_submit" method="post" class="login">
 	<div>
 		<h3>Log In</h3>
 		<?php

@@ -6,6 +6,18 @@
 <?php
 	include_once("link.php");
 ?>
+<style>
+	div.body img {
+		width: 25%;
+		height: 25%;
+		border: medium solid rgb(37, 94, 105);
+		margin: 10px;
+	}
+	
+	div.body h3 {
+		font-style: oblique;
+	}
+</style>
 </head>
 <body>
 	<div class="wrapper">
