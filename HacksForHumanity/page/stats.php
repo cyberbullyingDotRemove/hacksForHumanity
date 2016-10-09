@@ -9,7 +9,7 @@ include_once ("../../link.php");
 <body>
 	<div class="wrapper">
 <?php
-include_once ("../header.php");
+include_once ("header.php");
 ?>
 	<div class="body">
 			<div>
@@ -17,7 +17,7 @@ include_once ("../header.php");
 			</div>
 		</div>
 <?php
-include_once ("../footer.php");
+include_once ("footer.php");
 ?>
 </div>
 </body>

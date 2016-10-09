@@ -38,7 +38,7 @@ require_once ("link.php");
 							id="post"></textarea><br>
 					</label> <label> Screenshot/Image: <input type="file" name="image"
 						id="image"><br>
-					</label> <input type="submit" value="Submit Cyberbullying"
+					</label> <input type="image" src="../image/submit_button.png" value="Submit Cyberbullying"
 						id="submit">
 				</div>
 			</form>
