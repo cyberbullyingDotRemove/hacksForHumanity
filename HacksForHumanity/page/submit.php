@@ -8,8 +8,7 @@
 <script src="../script/submit_validate.js"></script>
 <script>
 	window.onload = function() {
-		document.getElementById("submit").onsubmit = function() {
-			alert();
+			alert("testing onsubmit");
 			var valid = true;
 			if (validateURL()) {
 				alert("Please enter a valid URL");

@@ -1,5 +1,4 @@
 function validateURL(inp) {
-	alert("URL VALIdATE");
 	//check for a match in the URL regular expression
 	return /(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})/.match(inp);
 }
