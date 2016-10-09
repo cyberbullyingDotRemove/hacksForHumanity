@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+/*
+	color scheme:
+	
+	background: 
+	font color: 
+	font type: 
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: red;
+	color: white;
+}
