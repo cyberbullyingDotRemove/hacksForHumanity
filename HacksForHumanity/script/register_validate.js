@@ -13,6 +13,6 @@ function confirmPassword(inp1, inp2) {
 }
 
 function validateEmail(inp) {
-	var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	var regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 	return regex.text(inp);	    
 }

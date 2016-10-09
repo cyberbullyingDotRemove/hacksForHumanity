@@ -6,7 +6,8 @@
 <?php
 	include_once("link.php");
 ?>
-<script src="register_validate.js"></script>
+
+<script src="../script/register_validate.js"></script>
 <script>
 	window.onload = function() {
 		document.getElementById("register_submit").onsubmit = function() {
@@ -15,12 +16,12 @@
 			confirmPwField = document.getElementById("password_confirm").value,
 			emailField = document.getElementById("email").value;
 
-			if (isEmpty(userField) || isEmpty(passwordField) || isEmpty(confirmPasswordField || isEmpty(emailField)) {
+			if (isEmpty(userField) || isEmpty(passwordField) || isEmpty(confirmPwField) || isEmpty(emailField)) {
 				alert("Please fill out all of the fields!");
 				return false;
 			}
 
-			if (!confirmPassword(passwordField), confirmPasswordField)) {
+			if (!confirmPassword(passwordField, confirmPwField)) {
 				alert("Please make sure your password is at least 8 characters long;\nand the two password fields must match!");
 				return false;
 			}
