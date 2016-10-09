@@ -6,6 +6,29 @@
 <?php
 	include_once("link.php");
 ?>
+<style>
+	div.body div#home_register {
+		background-color: white;
+		padding: 15px;
+		border: thin solid black;
+		text-align: center;
+		display: inline-block;
+	}
+	
+	div.body div#about {
+		display: inline;
+		text-align: center;
+	}
+	
+	div#about h3 {
+		font-size: 0.75em;
+	}
+	
+	div.body div#about img {
+		width: 20%;
+		height: 20%;
+	}
+</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -15,19 +38,20 @@
 		<!--Body of the home page-->
 		<div class="body">
 			<div id="about">
+				<h3>Report cyberbullying, with a purpose!</h3>
 				<img src="../image/about.png" alt="END CYBERBULLYING NOW">
 			</div>
 			<div id="home_register">
 				<h2>Register for an account</h2>
 				<form id="home_register_form" action="register.php" method="post">
 					<div>
-						<label> Username: <input type="text" name="username" id="username">
+						<label> Username: <input type="text" name="username" id="username"><br>
 						</label> <label> Password: <input type="password" name="password"
-							id="password">
+							id="password"><br>
 						</label> <label> Confirm Password: <input type="password"
-							name="password_confirm" id="password_confirm">
+							name="password_confirm" id="password_confirm"><br>
 						</label> <label> Email: <input type="text" name="email" id="email">
-						</label> <input type="submit" value="Sign up!">
+						</label> <input type="submit" value="Sign up!"><br>
 					</div>
 				</form>
 				<a id="log_in" href="login.php"> Already have an account?<br> Sign
@@ -36,6 +60,9 @@
 			</div>
 		</div>
 		<!--End of home body-->
+		<?php
+			include_once("footer.php");
+		?>
 	</div>
 </body>
 </html>

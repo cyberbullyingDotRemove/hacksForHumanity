@@ -12,6 +12,7 @@
 body {
 	font-size: 62.5%;
 	font-family: sans-serif;
+	background-color: rgb(37, 94, 105);
 }
 
 div.wrapper {
@@ -34,13 +35,19 @@ header h1 {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 5.326em;
 	color: rgb(64, 232, 64);
+	font-family: "Rockwell", sans-serif;
+	display: inline-block;
 }
 
 /*
-font-size: 5.326em;, font-size: 2.4em;
+font-size: 5.326em;, 
 */
 header nav ul {
 	list-style-type: none;
+}
+
+header nav {
+	display: inline-block;
 }
 
 header nav ul li {
@@ -51,6 +58,7 @@ header nav ul li {
 	color: black;
 	position: relative;
 	cursor: pointer;
+	font-size: 1.2em;
 }
 
 header nav ul li ul {
@@ -68,4 +76,23 @@ header a {
 	text-decoration: none;
 	color: black;
 }
+
+header img {
+	width: 10%;
+	height: 10%;
+}
 /*NAV/HEADER*/
+/*FOOTER*/
+footer {
+	background-color: rgb(37, 94, 105);
+	color: black;
+}
+
+span.copyright {
+	text-align: left;
+}
+
+span.contact_info {
+	text-align: right;
+}
+/*FOOTER*/
