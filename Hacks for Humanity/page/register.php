@@ -200,23 +200,24 @@ function spamcheck($field)
 ?>
 			<div class="content">
 		<form class="register" action="register.php" method="post">
-			<input type="hidden" name="status" value="register" />
-			<h1>Register</h1>
-			<label>Username:</label>
-			<input type="text" name="username"
-				value="<?php echo $_POST['username']; ?>" />
-			<span class="error" <?php if ($error[3]==1) { echo "style='visibility:visible;'">>Username is already taken";} if ($error[0]==1) { echo "style='visibility:visible;'>Cannot be blank";} ?></span>
+			<div>
+				<input type="hidden" name="status" value="register"></input>
+				<h1>Register</h1>
+				<label>Username:</label>
+				<input type="text" name="username" value=<?php echo $_POST['username']; ?>></input>
+				<span class="error" <?php if ($error[3]==1) { echo "style='visibility:visible;'"?>>Username is already taken";} if ($error[0]==1) { echo "style='visibility:visible;'>Cannot be blank";} ?></span>
 
 								<label>Email:</label>
 								<input type="text" name="email" value="<?php echo $_POST['email']; ?>"/>
-			<span class="error"
-				<?php if ($error[2]==1) { echo "style='visibility:visible;'">Invalid email";} if ($error[4]==1) { echo "style='visibility:visible;'>Email is already registered";}?></span>
+				<span class="error"
+					<?php if ($error[2]==1) { echo "style='visibility:visible;'">Invalid email";} if ($error[4]==1) { echo "style='visibility:visible;'>Email is already registered";}?></span>
 
 								<label>Password:</label>
 								<input type="password" name="password"/>
 								<span class="error" <?php if ($error[1]==1) { echo "style='visibility:visible;'">>Cannot be blank";} ?></span>
 
-			<input type="submit" value="Register" />
+				<input type="submit" value="Register" />
+			</div>
 		</form>
 	</div>
 </body>

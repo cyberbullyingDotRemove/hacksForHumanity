@@ -73,19 +73,20 @@ if ($_POST ['status'] == "login") {
 	<h1>Login</h1>
 	<div class="content">
 		<form class="login" action="login.php" method="post">
+			<div>
 			<label>Username:</label>
 			<input type="text" name="username" />
 			<span class="error"
 				<?php if ($error==1) { echo "style='visibility:visible;'>";} ?>>Incorrect
 				Username or Password</span>
 			<label>Password: </label>
-			<input type="password" name="password" />
+			<input type="password" name="password"></input>
 			<input type="submit" value="Login"></input>
 			<input type="hidden" value="login"></input>
 			<a href="register.php" rel="register" class="linkform">Register here</a>
+			</div>
 		</form>
 	</div>
 
 </body>
 </html>
-[
