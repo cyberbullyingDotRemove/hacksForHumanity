@@ -5,14 +5,23 @@
 <?php
 	require_once("link.php");
 ?>
-<script src="../script/submit_validate.js">
+<script src="../script/submit_validate.js"></script>
+<script>
 	window.onload = function() {
 		document.getElementById("submit").onsubmit = function() {
+			alert();
 			var valid = true;
 			if (validateURL()) {
 				alert("Please enter a valid URL");
 				valid = false;
 			}
+	
+			if (validateImage()) {
+				alert("Please enter an image file");
+				valid = false;
+			}
+	
+			return valid;
 		};
 	};
 </script>
