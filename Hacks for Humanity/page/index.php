@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+<div class="wrapper">
 
+</div>
 </body>
 </html>
