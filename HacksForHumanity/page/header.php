@@ -9,8 +9,8 @@
 			<li>
 				ABOUT
 				<ul>
-					<li><a href="about/mission.php">MISSION STATEMENT</a></li>
-					<li><a href="about/stats.php">STATISTICS</a></li>
+					<li><a href="mission.php">MISSION STATEMENT</a></li>
+					<li><a href="stats.php">STATISTICS</a></li>
 				</ul>
 			</li>
 			<li><a href="register.php">CREATE A PROFILE</a></li>

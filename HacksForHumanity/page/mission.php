@@ -5,6 +5,12 @@
 <?php
 include_once ("link.php");
 ?>
+
+<style>
+	.body {
+		
+	}
+</style>
 </head>
 <body>
 	<div class="wrapper">
