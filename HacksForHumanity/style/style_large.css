@@ -82,17 +82,3 @@ header img {
 	height: 10%;
 }
 /*NAV/HEADER*/
-/*FOOTER*/
-footer {
-	background-color: rgb(37, 94, 105);
-	color: black;
-}
-
-span.copyright {
-	text-align: left;
-}
-
-span.contact_info {
-	text-align: right;
-}
-/*FOOTER*/
