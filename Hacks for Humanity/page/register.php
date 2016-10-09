@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Register</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <?php session_start(); ?>
 <?php
 require("common.php");
 $error=array(0,0,0,0,0,0,0);
@@ -190,34 +198,26 @@ function spamcheck($field)
     }
     }
 ?>
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-    <head>
-        <title>Register</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
 			<div class="content">
-					<form class="register" action="register.php" method="post">
-            <input type="hidden" name="status" value="register" />
-						<h1>Register</h1>
-								<label>Username:</label>
-								<input type="text" name="username" value="<?php echo $_POST['username']; ?>"/>
-								<span class="error" <?php if ($error[3]==1) { echo "style='visibility:visible;'>Username is already taken";} if ($error[0]==1) { echo "style='visibility:visible;'>Cannot be blank";} ?></span>
+		<form class="register" action="register.php" method="post">
+			<input type="hidden" name="status" value="register" />
+			<h1>Register</h1>
+			<label>Username:</label>
+			<input type="text" name="username"
+				value="<?php echo $_POST['username']; ?>" />
+			<span class="error" <?php if ($error[3]==1) { echo "style='visibility:visible;'">>Username is already taken";} if ($error[0]==1) { echo "style='visibility:visible;'>Cannot be blank";} ?></span>
 
 								<label>Email:</label>
 								<input type="text" name="email" value="<?php echo $_POST['email']; ?>"/>
-								<span class="error" <?php if ($error[2]==1) { echo "style='visibility:visible;'>Invalid email";} if ($error[4]==1) { echo "style='visibility:visible;'>Email is already registered";}?></span>
+			<span class="error"
+				<?php if ($error[2]==1) { echo "style='visibility:visible;'">Invalid email";} if ($error[4]==1) { echo "style='visibility:visible;'>Email is already registered";}?></span>
 
 								<label>Password:</label>
 								<input type="password" name="password"/>
-								<span class="error" <?php if ($error[1]==1) { echo "style='visibility:visible;'>Cannot be blank";} ?></span>
+								<span class="error" <?php if ($error[1]==1) { echo "style='visibility:visible;'">>Cannot be blank";} ?></span>
 
-							<input type="submit" value="Register" />
-					</form>
-        </div>
-    </body>
+			<input type="submit" value="Register" />
+		</form>
+	</div>
+</body>
 </html>
