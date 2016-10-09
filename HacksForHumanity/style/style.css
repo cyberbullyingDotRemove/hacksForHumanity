@@ -3,11 +3,23 @@
 /*
 	color scheme:
 	
-	background: 
-	font color: 
-	font type: 
+	title title: yellow
+	
+	header/footer:
+		background: 255, 159, 95
+		foreground: black
+	
+	body: 
+		background:
+		foreground: black
+		
+	submit button background: 255, 255, 76
+	
+	already have an account foreground: 47, 47 255
 */
 
+
+/*GENERAL*/
 * {
 	margin: 0;
 	padding: 0;
@@ -17,3 +29,8 @@ body {
 	background-color: red;
 	color: white;
 }
+/*GENERAL*/
+
+/*NAV BAR*/
+
+/*NAV BAR*/
