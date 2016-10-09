@@ -1,1 +1,26 @@
 @CHARSET "ISO-8859-1";
+
+/*GENERAL*/
+* {
+	margin: 0;
+	padding: 0;
+	border-sizing: border-box;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: sans-serif;
+	color: black;
+}
+
+div.wrapper {
+	font-size: 1.6em;
+	padding: 2em;
+	margin: 0 auto;
+	background-color: rgb(37, 94, 105);
+}
+
+div.body {
+	background-color: white;
+}
+/*GENERAL*/

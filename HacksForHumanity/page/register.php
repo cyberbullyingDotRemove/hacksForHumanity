@@ -4,7 +4,7 @@
 <head>
 <title>cyber_go(ne) -- Create Profile</title>
 <?php
-	include_once("link.php");
+include_once ("link.php");
 ?>
 
 <script src="../script/register_validate.js"></script>
@@ -38,17 +38,26 @@
 </head>
 <body>
 	<div class="wrapper">
-		<form action="register_confirm.php" method="post" id="register_submit">
-			<div>
-				<label> Username: <input type="text" name="username" id="username"><br>
-				</label> <label> Password: <input type="password" name="password"
-					id="password"><br>
-				</label> <label> Confirm Password: <input type="password"
-					name="password_confirm" id="password_confirm"><br>
-				</label> <label> Email: <input type="text" name="email" id="email">
-				</label> <input type="submit" value="Sign up!"><br>
-			</div>
-		</form>
+	<?php
+	require_once ("header.php");
+	?>
+	<div class="body">
+			<form action="register_confirm.php" method="post"
+				id="register_submit">
+				<div>
+					<label> Username: <input type="text" name="username" id="username"><br>
+					</label> <label> Password: <input type="password" name="password"
+						id="password"><br>
+					</label> <label> Confirm Password: <input type="password"
+						name="password_confirm" id="password_confirm"><br>
+					</label> <label> Email: <input type="text" name="email" id="email">
+					</label> <input type="submit" value="Sign up!"><br>
+				</div>
+			</form>
+		</div>
+	<?php
+	require_once ("footer.php");
+	?>
 	</div>
 </body>
 </html>

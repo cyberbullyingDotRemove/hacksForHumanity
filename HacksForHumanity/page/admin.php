@@ -26,10 +26,12 @@
 </script>
 </head>
 <body>
-	<?php
+	<div class="wrapper">
+		<?php
 		require_once("header.php");
 	?>
-	<table>
+	<div class="body">
+		<table>
 		<tr>
 			<th>Profile ID</th>
 			<th>URL</th>
@@ -42,14 +44,19 @@
 			$result = mysqli_query($dbc, $query) or die("Error executing query");
 			
 			while ($row = mysqli_fetch_array($result)) {
-				
+				echo "<td>" . $row['user_id'] . "</td>";
+				echo "<td>" . $row['url'] . "</td>";
+				echo "<td>" . $row['body'] . "</td>";
+				echo "<td>" . $row['image'] . "</td>";
 			}
 			
 			mysqli_close($dbc);
 		?>
 	</table>
+	</div>
 	<?php
 		require_once("header.php");
 	?>
+	</div>
 </body>
 </html>

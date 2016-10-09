@@ -3,6 +3,7 @@ session_start ();
 ?>
 <form action="#" id="login_submit" method="post">
 	<div>
+		<h3>Log In</h3>
 		<?php
 			if (isset($_SESSION['username'])) {
 				echo "<h3>Logged in as " . $_SESSION['username'] . "</h3>";
