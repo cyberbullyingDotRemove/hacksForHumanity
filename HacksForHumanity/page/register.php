@@ -38,7 +38,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<form action="register_submit.php" method="post" id="register_submit">
+		<form action="register_confirm.php" method="post" id="register_submit">
 			<div>
 				<label> Username: <input type="text" name="username" id="username"><br>
 				</label> <label> Password: <input type="password" name="password"

@@ -18,4 +18,7 @@
 	</nav>
 	<img src="../image/profile_picture.png"
 		alt="Your profile picture did not load!" class="profile_pic">
+	<?php
+		require_once("login.php");
+	?>
 </header>
