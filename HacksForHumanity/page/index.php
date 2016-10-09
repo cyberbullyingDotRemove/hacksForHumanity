@@ -9,22 +9,9 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header>
-			<img src="../image/logo.png" alt="Could not load logo" class="logo">
-			<h1>cyber_go(ne)</h1>
-			<nav>
-				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li>About</li>
-					<li><a href="about/mission_statement.php">Mission Statement</a></li>
-					<li><a href="about/stats.php">Stats</a></li>
-					<li><a href="dear_abbie.php">Advice Column</a></li>
-					<li><a href="submit.php">Stop Cyberbullying</a></li>
-				</ul>
-			</nav>
-			<img src="../image/profile_picture.png"
-				alt="Your profile picture did not load!" class="profile_pic">
-		</header>
+	<?php
+		include_once("header.php");
+	?>
 		<!--Body of the home page-->
 		<div class="body">
 			<div id="about">
@@ -49,11 +36,6 @@
 			</div>
 		</div>
 		<!--End of home body-->
-		<footer>
-			<span class="copyright">&copy; inc.</span> <span class="contact_info">
-				cyber_gone@gmail.com<br> 480.555.4444
-			</span>
-		</footer>
 	</div>
 </body>
 </html>

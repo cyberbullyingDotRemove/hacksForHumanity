@@ -19,4 +19,53 @@ div.wrapper {
 	padding: 2em;
 	margin: 0 auto;
 }
+
+div.body {
+	font-size: 1.6em;
+}
 /*GENERAL*/
+
+/*NAV/HEADER*/
+header {
+	background-color: rgb(37, 94, 105);
+}
+
+header h1 {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 5.326em;
+	color: rgb(64, 232, 64);
+}
+
+/*
+font-size: 5.326em;, font-size: 2.4em;
+*/
+header nav ul {
+	list-style-type: none;
+}
+
+header nav ul li {
+	background-color: rgb(170, 208, 66);
+	display: inline-block;
+	border: thin solid black;
+	padding: 15px 50px;
+	color: black;
+	position: relative;
+	cursor: pointer;
+}
+
+header nav ul li ul {
+	position: absolute;
+	margin-left: -51px;
+	margin-top: 15px;
+	display: none;
+}
+
+header nav ul li:hover ul {
+	display: block;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+/*NAV/HEADER*/

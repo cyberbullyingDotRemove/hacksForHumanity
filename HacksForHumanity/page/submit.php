@@ -8,18 +8,18 @@
 <script src="../script/submit_validate.js"></script>
 <script>
 	window.onload = function() {
-			alert("testing onsubmit");
+		document.getElementById("submit_form").onsubmit = function() {
 			var valid = true;
-			if (validateURL()) {
+			if (!validateURL(document.getElementById("url").value)) {
 				alert("Please enter a valid URL");
 				valid = false;
 			}
-	
-			if (validateImage()) {
+
+			if (!validateImage(document.getElementById("image").value)) {
 				alert("Please enter an image file");
 				valid = false;
 			}
-	
+
 			return valid;
 		};
 	};
@@ -29,7 +29,7 @@
 	<form action="submit_confirm.php" method="post" id="submit_form">
 		<div>
 			<label>
-				URL: <input type="text" size="256" name="url"><br>
+				URL: <input type="text" size="256" name="url" id="url"><br>
 			</label>
 			<label>
 				Post: <textarea rows="10" cols="20" name="post" id="post"></textarea><br>
