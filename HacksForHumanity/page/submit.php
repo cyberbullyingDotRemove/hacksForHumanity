@@ -33,8 +33,8 @@ require_once ("link.php");
 		<div class="body">
 			<form action="submit_confirm.php" method="post" id="submit_form">
 				<div>
-					<label> URL: <input type="text" size="256" name="url" id="url"><br>
-					</label> <label> Post: <textarea rows="10" cols="20" name="post"
+					<label> URL: <input type="text" size="32" name="url" id="url"><br>
+					</label> <label> Post: <textarea rows="5" cols="30" name="post"
 							id="post"></textarea><br>
 					</label> <label> Screenshot/Image: <input type="file" name="image"
 						id="image"><br>

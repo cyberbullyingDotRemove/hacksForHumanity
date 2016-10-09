@@ -14,7 +14,7 @@ body {
 	color: black;
 }
 
-div.wrapper {
+.wrapper {
 	font-size: 1.6em;
 	padding: 2em;
 	padding-left: 0;
@@ -24,7 +24,7 @@ div.wrapper {
 	text-align: center;
 }
 
-div.body {
+.body {
 	background-color: white;
 	border: medium solid black;
 	padding: 2em;
@@ -37,7 +37,7 @@ input {
 	font-size: 1.0em;
 }
 
-input[type='submit'] {
+[type='submit'] {
 	padding: 10px;
 }
 /*GENERAL*/
@@ -48,7 +48,7 @@ header img {
 	height: 10%;
 }
 
-header img.profile_pic {
+header profile_pic {
 	margin-left: 67.5px;
 }
 
@@ -89,7 +89,7 @@ header ul li:hover ul {
 	display: block;
 }
 
-form.login {
+.login {
 	border: thin solid black;
 	color: rgb(204, 204, 204);
 	float: right;
@@ -99,7 +99,7 @@ form.login {
 	background-color: 
 }
 
-form.login * {
+.login * {
 	margin: 10px;
 }
 
@@ -109,5 +109,6 @@ form.login * {
 footer {
 	border: thin solid black;
 	font-weight: bold;
+	padding: 15px;
 }
 /*FOOTER*/
