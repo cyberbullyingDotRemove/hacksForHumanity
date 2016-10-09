@@ -30,6 +30,7 @@ session_start ();
 					echo "<h3>Sorry! Your username and/or password is incorrect!";
 				} else {
 					$_SESSION['username'] = $row['username'];
+					$_SESSION['id'] = $row['id'];
 				}
 				
 				mysqli_close($dbc);

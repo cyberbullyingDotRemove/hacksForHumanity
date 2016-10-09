@@ -29,22 +29,27 @@
 	<?php
 		require_once("header.php");
 	?>
-	<form action="submit_confirm.php" method="post" id="submit_form">
-		<div>
-			<label>
-				URL: <input type="text" size="256" name="url" id="url"><br>
-			</label>
-			<label>
-				Post: <textarea rows="10" cols="20" name="post" id="post"></textarea><br>
-			</label>
-			<label>
-				Screenshot/Image: <input type="file" name="image" id="image"><br>
-			</label>
-			<input type="submit" value="Submit Cyberbullying" id="submit">
-		</div>
-	</form>
+	<table>
+		<tr>
+			<th>Profile ID</th>
+			<th>URL</th>
+			<th>Body</th>
+			<th>Image</th>
+		</tr>
+		<?php
+			$dbc = mysqli_connect("localhost", "root", "", "anti_cyber") or die("Error connecting to database");
+			$query = "SELECT * FROM submissions";
+			$result = mysqli_query($dbc, $query) or die("Error executing query");
+			
+			while ($row = mysqli_fetch_array($result)) {
+				
+			}
+			
+			mysqli_close($dbc);
+		?>
+	</table>
 	<?php
-		require_once("footer.php");
+		require_once("header.php");
 	?>
 </body>
 </html>
