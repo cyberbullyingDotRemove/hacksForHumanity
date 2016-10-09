@@ -4,7 +4,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>cyber_go(ne) -- Home</title>
-<link rel="stylesheet" href="../style/style.css">
+
+<!-- Responsive stylesheets to the size of the screen -->
+<link rel="stylesheet" href="../style/style_large.css">
+<link rel="stylesheet" media="only screen and (min-width: 768px)" href="../style/style_large.css">
+<link rel="stylesheet" media="only screen and (min-width: 600px)" href="../style/style_large.css">
+<link rel="stylesheet" media="only screen and (min-width: 300px)" href="../style/style_large.css">
+<!-- Responsive stylesheets to the size of the screen -->
+
 <link type="image/png" rel="icon" href="../image/logo.png">
 </head>
 <body>
@@ -14,10 +21,12 @@
 			<h1>cyber_go(ne)</h1>
 			<nav>
 				<ul>
-					<li>Home</li>
+					<li><a href="index.php">Home</a></li>
 					<li>About</li>
-					<li>Advice Column</li>
-					<li>Stats</li>
+					<li><a href="about/mission_statement.php">Mission Statement</a></li>
+					<li><a href="about/stats.php">Stats</a></li>
+					<li><a href="dear_abbie.php">Advice Column</a></li>
+					<li><a href=".php">Stop Cyberbullying</a></li>
 				</ul>
 			</nav>
 			<img src="../image/profile_picture.png"
