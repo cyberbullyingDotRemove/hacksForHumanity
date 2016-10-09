@@ -7,7 +7,7 @@
 	include_once("link.php");
 ?>
 <style>
-	div.body img {
+	#about img {
 		width: 25%;
 		height: 25%;
 		border: medium solid rgb(37, 94, 105);
@@ -29,6 +29,11 @@
 			<div id="about">
 				<h3>Report cyberbullying, with a purpose!</h3>
 				<img src="../image/about.png" alt="END CYBERBULLYING NOW">
+			</div>
+			<div id="register_button">
+				<a href="register.php">
+					<img src="../image/register_button.png" alt="Don't have a profile? Create one here!">
+				</a>
 			</div>
 		</div>
 		<!--End of home body-->

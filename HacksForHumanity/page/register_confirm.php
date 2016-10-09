@@ -11,9 +11,9 @@ include_once ("link.php");
 	<div class="wrapper">
 		<?php
 		$dbc = mysqli_connect ( "localhost", "root", "", "anti_cyber" ) or die ( "Failed connection to database" );
-		$username = $_POST ['username'];
-		$password = $_POST ['password'];
-		$email = $_POST ['email'];
+		$username = $_POST ['register_username'];
+		$password = $_POST ['register_password'];
+		$email = $_POST ['register_email'];
 		
 		$query = "INSERT INTO users (id, username, password, email, POINTS) VALUES ('0', '$username', SHA('$password'), '$email', '0')";
 		

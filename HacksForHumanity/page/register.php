@@ -17,10 +17,10 @@ include_once ("link.php");
 <script>
 	window.onload = function() {
 		document.getElementById("register_submit").onsubmit = function() {
-			var userField = document.getElementById("username").value,
-			passwordField = document.getElementById("password").value,
-			confirmPwField = document.getElementById("password_confirm").value,
-			emailField = document.getElementById("email").value;
+			var userField = document.getElementById("register_username").value,
+			passwordField = document.getElementById("register_password").value,
+			confirmPwField = document.getElementById("register_password_confirm").value,
+			emailField = document.getElementById("register_email").value;
 
 			if (isEmpty(userField) || isEmpty(passwordField) || isEmpty(confirmPwField) || isEmpty(emailField)) {
 				alert("Please fill out all of the fields!");
@@ -52,12 +52,12 @@ include_once ("link.php");
 		<form action="register_confirm.php" method="post"
 			id="register_submit">
 			<div>
-				<label> Username: <input type="text" name="username" id="username"><br>
-				</label> <label> Password: <input type="password" name="password"
-					id="password"><br>
+				<label> Username: <input type="text" name="register_username" id="register_username"><br>
+				</label> <label> Password: <input type="password" name="register_password"
+					id="register_password"><br>
 				</label> <label> Confirm Password: <input type="password"
-					name="password_confirm" id="password_confirm"><br>
-				</label> <label> Email: <input type="text" name="email" id="email">
+					name="register_password_confirm" id="register_password_confirm"><br>
+				</label> <label> Email: <input type="text" name="register_email" id="register_email">
 				</label> <input type="submit" value="Sign up!"><br>
 			</div>
 		</form>
