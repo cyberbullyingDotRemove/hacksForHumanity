@@ -6,18 +6,13 @@ function confirmPassword(inp1, inp2) {
 	if (inp1.length < 8)
 		return false;
 	
+	if (inp1 != inp2)
+		return false;
+	
+	return true;
 }
 
-function isImage(file) {
-	// since the field is optional, return true if the field is empty
-	if (file == "")
-		return true;
-
-	// now validate based on the file extension (the last 3 characters of the
-	// URL)
-	var extension = file.substring(file.length - 3);
-	if (extension == "peg" || extension == "jpg" || extension == "png"
-			|| extension == "gif")
-		return true;
-	return false;
+function validateEmail(inp) {
+	var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return regex.text(inp);	    
 }
