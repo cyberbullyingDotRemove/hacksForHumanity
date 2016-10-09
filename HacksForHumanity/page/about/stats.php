@@ -3,7 +3,7 @@
 <head>
 <title>cyber_go(ne) -- Our Mission</title>
 <?php
-include_once ("../link.php");
+include_once ("../../link.php");
 ?>
 </head>
 <body>
