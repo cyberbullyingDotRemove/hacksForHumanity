@@ -11,6 +11,7 @@
 					<li><a href="about/stats.php">STATISTICS</a></li>
 				</ul>
 			</li>
+			<li><a href="register.php">CREATE A PROFILE</a></li>
 			<li><a href="dear_abbie.php">ADVICE COLUMN</a></li>
 			<li><a href="submit.php">STOP CYBERBULLYING</a></li>
 		</ul>
