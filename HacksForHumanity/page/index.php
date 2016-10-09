@@ -6,29 +6,6 @@
 <?php
 	include_once("link.php");
 ?>
-<style>
-	div.body div#home_register {
-		background-color: white;
-		padding: 15px;
-		border: thin solid black;
-		text-align: center;
-		display: inline-block;
-	}
-	
-	div.body div#about {
-		display: inline;
-		text-align: center;
-	}
-	
-	div#about h3 {
-		font-size: 0.75em;
-	}
-	
-	div.body div#about img {
-		width: 20%;
-		height: 20%;
-	}
-</style>
 </head>
 <body>
 	<div class="wrapper">
